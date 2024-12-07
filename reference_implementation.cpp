@@ -3,12 +3,30 @@
 #include <sstream>
 #include <vector>
 #include <string>
+#include <cerrno> // For errno
+#include <cstring> // For strerror
+
+
+
+
+// std::string line;
+// while (std::getline(file, line)) { // Read the file line by line
+//     std::cout << line << std::endl; // Process the line (e.g., print it)
+// }
+
+// file.close(); // Close the file
+// return 0;
 
 // Helper function to read CSV files into a vector of string vectors
 std::vector<std::vector<std::string>> readCSV(const std::string& filename) {
     std::vector<std::vector<std::string>> data;
     std::ifstream file(filename);
     std::string line;
+
+    if (!file.is_open()) { // Check if the file opened successfully
+        std::cerr << "Error: Could not open the file." << std::endl;
+        std::cerr << "Reason: " << strerror(errno) << std::endl;
+    }
 
     while (std::getline(file, line)) {
         std::vector<std::string> row;
@@ -70,7 +88,7 @@ int main(int argc, char* argv[]) {
     }
 
     auto result = multiwayJoin(argv[1], argv[2], argv[3], argv[4]);
-
+    std::cout << "HELLO\n";
     // Output the result
     for (const auto& row : result) {
         for (size_t i = 0; i < row.size(); ++i) {
@@ -82,5 +100,6 @@ int main(int argc, char* argv[]) {
         std::cout << "\n";
     }
 
+    
     return 0;
 }

@@ -1,3 +1,4 @@
 .vscode
 benchmark_sets/
-
+myjoin.exe
+benchmark_sets/*
