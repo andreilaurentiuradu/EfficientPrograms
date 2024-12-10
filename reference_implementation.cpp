@@ -6,18 +6,6 @@
 #include <cerrno> // For errno
 #include <cstring> // For strerror
 
-
-
-
-// std::string line;
-// while (std::getline(file, line)) { // Read the file line by line
-//     std::cout << line << std::endl; // Process the line (e.g., print it)
-// }
-
-// file.close(); // Close the file
-// return 0;
-
-// Helper function to read CSV files into a vector of string vectors
 std::vector<std::vector<std::string>> readCSV(const std::string& filename) {
     std::vector<std::vector<std::string>> data;
     std::ifstream file(filename);
