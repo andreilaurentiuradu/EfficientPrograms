@@ -1,0 +1,25 @@
+terminate called after throwing an instance of 'std::logic_error'
+  what():  basic_string::_M_construct null not valid
+./binaries/hashmap_join: Aborted
+{"counter-value" : "747418.000000", "unit" : "", "event" : "branches", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 1.024238, "metric-unit" : "G/sec"}
+{"counter-value" : "19009.000000", "unit" : "", "event" : "branch-misses", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 2.543289, "metric-unit" : "of all branches"}
+{"counter-value" : "17456.000000", "unit" : "", "event" : "bus-cycles", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 23.921160, "metric-unit" : "M/sec"}
+{"counter-value" : "24414.000000", "unit" : "", "event" : "cache-misses", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 37.117446, "metric-unit" : "of all cache refs"}
+{"counter-value" : "65775.000000", "unit" : "", "event" : "cache-references", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 90.136016, "metric-unit" : "M/sec"}
+{"counter-value" : "3195557.000000", "unit" : "", "event" : "cpu-cycles", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 4.379092, "metric-unit" : "GHz"}
+{"counter-value" : "3976162.000000", "unit" : "", "event" : "instructions", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 1.244278, "metric-unit" : "insn per cycle"}
+{"counter-value" : "2321648.000000", "unit" : "", "event" : "ref-cycles", "event-runtime" : 732449, "pcnt-running" : 100.00, "metric-value" : 3.181514, "metric-unit" : "G/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "alignment-faults", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "bpf-output", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cgroup-switches", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cs", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.729556", "unit" : "msec", "event" : "cpu-clock", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.692577, "metric-unit" : "CPUs utilized"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cpu-migrations", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "emulation-faults", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "major-faults", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "122.000000", "unit" : "", "event" : "minor-faults", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 167.185009, "metric-unit" : "K/sec"}
+{"counter-value" : "122.000000", "unit" : "", "event" : "page-faults", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 167.185009, "metric-unit" : "K/sec"}
+{"counter-value" : "0.729905", "unit" : "msec", "event" : "task-clock", "event-runtime" : 729905, "pcnt-running" : 100.00, "metric-value" : 0.692909, "metric-unit" : "CPUs utilized"}
+{"counter-value" : "1053393.000000", "unit" : "ns", "event" : "duration_time", "event-runtime" : 1053393, "pcnt-running" : 100.00, "metric-value" : 1.443537, "metric-unit" : "G/sec"}
+{"counter-value" : "1083000.000000", "unit" : "ns", "event" : "user_time", "event-runtime" : 1083000, "pcnt-running" : 100.00, "metric-value" : 1.484110, "metric-unit" : "G/sec"}
+{"counter-value" : "<not counted>", "unit" : "ns", "event" : "system_time", "event-runtime" : 0, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : ""}

@@ -40,11 +40,6 @@ vector<vector<string>> hashMerge(
 ) {
     unordered_map<string, vector<vector<string>>> join_map;
     
-    // swap a and b if b is larger
-    if (a.size() < b.size()) {
-        swap(a,b);
-        swap(f_ind_1, f_ind_2);
-    }
 
     // loop over all rows in the smaller table
     for (const auto &row : a) {

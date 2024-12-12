@@ -1,0 +1,25 @@
+terminate called after throwing an instance of 'std::logic_error'
+  what():  basic_string::_M_construct null not valid
+./binaries/hashmap_join: Aborted
+{"counter-value" : "743988.000000", "unit" : "", "event" : "branches", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 982.316694, "metric-unit" : "M/sec"}
+{"counter-value" : "19023.000000", "unit" : "", "event" : "branch-misses", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 2.556896, "metric-unit" : "of all branches"}
+{"counter-value" : "18130.000000", "unit" : "", "event" : "bus-cycles", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 23.937754, "metric-unit" : "M/sec"}
+{"counter-value" : "23816.000000", "unit" : "", "event" : "cache-misses", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 34.836030, "metric-unit" : "of all cache refs"}
+{"counter-value" : "68366.000000", "unit" : "", "event" : "cache-references", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 90.266326, "metric-unit" : "M/sec"}
+{"counter-value" : "3241310.000000", "unit" : "", "event" : "cpu-cycles", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 4.279629, "metric-unit" : "GHz"}
+{"counter-value" : "3960515.000000", "unit" : "", "event" : "instructions", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 1.221887, "metric-unit" : "insn per cycle"}
+{"counter-value" : "2411290.000000", "unit" : "", "event" : "ref-cycles", "event-runtime" : 761149, "pcnt-running" : 100.00, "metric-value" : 3.183721, "metric-unit" : "G/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "alignment-faults", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "bpf-output", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cgroup-switches", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cs", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.757018", "unit" : "msec", "event" : "cpu-clock", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.672111, "metric-unit" : "CPUs utilized"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cpu-migrations", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "emulation-faults", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "major-faults", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "119.000000", "unit" : "", "event" : "minor-faults", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 157.120393, "metric-unit" : "K/sec"}
+{"counter-value" : "119.000000", "unit" : "", "event" : "page-faults", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 157.120393, "metric-unit" : "K/sec"}
+{"counter-value" : "0.757744", "unit" : "msec", "event" : "task-clock", "event-runtime" : 757744, "pcnt-running" : 100.00, "metric-value" : 0.672756, "metric-unit" : "CPUs utilized"}
+{"counter-value" : "1126328.000000", "unit" : "ns", "event" : "duration_time", "event-runtime" : 1126328, "pcnt-running" : 100.00, "metric-value" : 1.487135, "metric-unit" : "G/sec"}
+{"counter-value" : "1165000.000000", "unit" : "ns", "event" : "user_time", "event-runtime" : 1165000, "pcnt-running" : 100.00, "metric-value" : 1.538195, "metric-unit" : "G/sec"}
+{"counter-value" : "<not counted>", "unit" : "ns", "event" : "system_time", "event-runtime" : 0, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : ""}

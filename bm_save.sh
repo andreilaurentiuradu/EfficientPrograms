@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Please enter source file"
-read source_file
+source_file=$1
 g++ implementations/${source_file}.cpp -o binaries/$source_file
 timestamp=$(date "+%Y-%m-%d%H:%M:%S")
 out_dir=benchmarks/${source_file}_${timestamp}
