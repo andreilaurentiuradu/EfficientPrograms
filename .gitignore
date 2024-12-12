@@ -2,3 +2,6 @@
 benchmark_sets/
 myjoin.exe
 benchmark_sets/*
+python_merge_join.py
+.vs/
+*.py
