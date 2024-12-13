@@ -1,7 +1,7 @@
 #!/bin/bash
 source_file=$1
 g++ implementations/${source_file}.cpp -o binaries/$source_file
-timestamp=$(date "+%Y-%m-%d%H:%M:%S")
+timestamp=$(date "+%Y-%m-%d%H_%M_%S")
 out_dir=benchmarks/${source_file}_${timestamp}
 mkdir "$out_dir"
 for dir in datasets/*; do
