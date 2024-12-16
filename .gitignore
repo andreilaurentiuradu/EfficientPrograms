@@ -5,3 +5,8 @@ benchmark_sets/*
 python_merge_join.py
 .vs/
 *.py
+a.csv
+b.csv
+c.csv
+d.csv
+abcd.csv
