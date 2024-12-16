@@ -113,22 +113,23 @@ int main(int argc, char* argv[]) {
         const string &A = file1Entry.first; // First field of File1
         const vector<string> &Bs = file1Entry.second; // Second fields of File1
 
-        if (file2Data.find(A) != file2Data.end()) {
-            const vector<string> &Cs = file2Data[A]; // Second fields of File2
+        auto it2 = file2Data.find(A);
+        auto it3 = file3Data.find(A);
+        if (it2 != file2Data.end() && it3 != file3Data.end()) {
+            const vector<string> &Cs = it2->second;
+            const vector<string> &Ds = it3->second;
 
-            if (file3Data.find(A) != file3Data.end()) {
-                const vector<string> &Ds = file3Data[A]; // Second fields of File3
+            for (const string &D : Ds) {
+                auto it4 = file4Data.find(D);
+                if (it4 != file4Data.end()) {
+                    const vector<string> &Es = it4->second;
 
-                for (const string &D : Ds) {
-                    if (file4Data.find(D) != file4Data.end()) {
-                        const vector<string> &Es = file4Data[D]; // Second fields of File4
-
-                        // Produce output
-                        for (const string &B : Bs) {
-                            for (const string &C : Cs) {
-                                for (const string &E : Es) {
-                                    cout << D << "," << A << "," << B << "," << C << "," << E << "\n";
-                                }
+                    // Produce output
+                    for (const string &B : Bs) {
+                        for (const string &C : Cs) {
+                            for (const string &E : Es) {
+                                cout << D << "," << A << "," << B << "," << C << "," << E << "\n";
+                                
                             }
                         }
                     }
