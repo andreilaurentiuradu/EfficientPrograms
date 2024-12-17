@@ -11,14 +11,17 @@ using namespace std;
 
 // Helper function to split a string by a delimiter
 vector<string> split(const string &line, char delimiter) {
-    vector<string> tokens;
-    stringstream ss(line);
-    string token;
-    while (getline(ss, token, delimiter)) {
-        tokens.push_back(token);
-    }
+    vector<string> tokens(2); // Initialize vector with size 2 (filled with empty strings)
+    size_t commaPos = line.find(delimiter);
+    
+    if (commaPos == string::npos) return {}; // Return empty vector if no delimiter is found
+
+    tokens[0] = line.substr(0, commaPos);      // Assign key
+    tokens[1] = line.substr(commaPos + 1);     // Assign value
+
     return tokens;
 }
+
 
 int main(int argc, char* argv[]) {
     // Input file names
@@ -31,6 +34,7 @@ int main(int argc, char* argv[]) {
     unordered_map<string, vector<string>> file2Data; // Map of key -> {C}
     unordered_map<string, vector<string>> file3Data; // Map of key -> {D}
     unordered_map<string, vector<string>> file4Data; // Map of D -> {E}
+
 
     // Read file1 and populate file1Data
     ifstream file1(file1Path);
@@ -85,20 +89,21 @@ int main(int argc, char* argv[]) {
     }
     file4.close();
 
-    // Perform the joins and output results
+    
+    // Perform joins and output results
     for (const auto &file1Entry : file1Data) {
-        const string &A = file1Entry.first; // First field of File1
-        const vector<string> &Bs = file1Entry.second; // Second fields of File1
+        const string &A = file1Entry.first;      // Key from File1
+        const vector<string> &Bs = file1Entry.second; // Values from File1
 
         if (file2Data.find(A) != file2Data.end()) {
-            const vector<string> &Cs = file2Data[A]; // Second fields of File2
+            const vector<string> &Cs = file2Data[A]; // Values from File2
 
             if (file3Data.find(A) != file3Data.end()) {
-                const vector<string> &Ds = file3Data[A]; // Second fields of File3
+                const vector<string> &Ds = file3Data[A]; // Values from File3
 
                 for (const string &D : Ds) {
                     if (file4Data.find(D) != file4Data.end()) {
-                        const vector<string> &Es = file4Data[D]; // Second fields of File4
+                        const vector<string> &Es = file4Data[D]; // Values from File4
 
                         // Produce output
                         for (const string &B : Bs) {
@@ -113,5 +118,6 @@ int main(int argc, char* argv[]) {
             }
         }
     }
+
     return 0;
 }
