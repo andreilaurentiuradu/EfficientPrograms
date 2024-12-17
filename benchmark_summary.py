@@ -3,7 +3,9 @@ import json
 import sys
 
 imp_name = sys.argv[1]
-req_m = sys.argv[2]
+req_m = None
+if len(sys.argv) > 2:
+    req_m = sys.argv[2] 
 
 
 dirnames = []
@@ -25,15 +27,12 @@ for filename in os.listdir(f"benchmarks/{most_recent}"):
             except Exception as e:
                 pass
 
+print(f"{'Test Name':<40} {'Metric':<15} {'Value':>15}")
+print("=" * 80)
 if req_m == None:
-    print(f"{'Test Name':<40} {'Metric':<15} {'Value':>15}")
-    print("=" * 80)
     for key in metrics.keys():
         print(f"{key:<40} {'cpu-cycles':<15} {metrics[key]['cpu-cycles']['counter-value']:>15}")
 else:
     for m_name in req_m.split(','):
-        print(f"{'Test Name':<40} {'Metric':<15} {'Value':>15}")
-        print("=" * 80)
         for key in metrics.keys():
-            print(f"{key:<40} {'cpu-cycles':<15} {metrics[key]['cpu-cycles']['counter-value']:>15}")        
-        print("\n\n")
+            print(f"{key:<40} {m_name:<15} {metrics[key][m_name]['counter-value']:>15}")        

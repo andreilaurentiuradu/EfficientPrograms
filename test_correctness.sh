@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "(!) Please provide the sourcefile name"
-read sourcefile
+sourcefile=$1
 echo "(!) Compiling"
 g++ implementations/${sourcefile}.cpp -o binaries/$sourcefile
 

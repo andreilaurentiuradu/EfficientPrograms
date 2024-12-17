@@ -4,31 +4,9 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <string.h>
 
 using namespace std;
-
-std::vector<std::vector<std::string>> readCSV(const std::string& filename) {
-    std::vector<std::vector<std::string>> data;
-    std::ifstream file(filename);
-    std::string line;
-
-    if (!file.is_open()) { // Check if the file opened successfully
-        std::cerr << "Error: Could not open the file." << std::endl;
-        std::cerr << "Reason: " << strerror(errno) << std::endl;
-    }
-
-    while (std::getline(file, line)) {
-        std::vector<std::string> row;
-        std::stringstream ss(line);
-        std::string field;
-        while (std::getline(ss, field, ',')) {
-            row.push_back(field);
-        }
-        data.push_back(row);
-    }
-
-    return data;
-}
 
 
 // Helper function to split a string by a delimiter

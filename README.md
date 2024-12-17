@@ -18,8 +18,22 @@ Beware that these tests get huge very quickly, and may bottleneck the testing pr
 
 ### 2. Correctness testing
 ---
-In order to test the correctness of an implementation, place the file in the `implementations/` folder. Then run `./test_correctness`. It will ask for the filename in implementations, specify it <b> without the .cpp</b> at the end. E.g. to test `hashmap_join.cpp` you type `hashmap_join`. It will compile and run all the tests for you. Try it. 
+In order to test the correctness of an implementation, place the file in the `implementations/` folder. Then run `./test_correctness <file_name>`. Specify the file <b> without the .cpp</b> at the end. E.g. to test `hashmap_join.cpp` you type `./test_correctness hashmap_join`. It will compile and run all the tests for you. Try it. 
 
 ### 3. Benchmarking
 ---
-To test the performance of a specific implementation, make sure it is placed in the `implementations/` folder. Then you can run `./bm_quick` to purely show you the results of benchmarking. It saves the data, then it summarizes it with a python script, and removes the benchmark again, s.t. the `benchmarks/` folder does not get cluttered. Once you think you have a meaningful benchmark to add, run `./bm_save`, which will permanently store it under `benchmarks/`.
+To test the performance of a specific implementation, make sure it is placed in the `implementations/` folder. Then you can run `./bm_quick <file_name> <metrics>` to purely show you the results of benchmarking. Example
+`./bm_quick.sh hashmap_join cpu-cycles,branches,duration_time`.
+
+It saves the data, then it summarizes it with a python script, and removes the benchmark again, s.t. the `benchmarks/` folder does not get cluttered. 
+
+Once you think you have a meaningful benchmark to add, run `./bm_save <file_name>`, which will permanently store it under `benchmarks/`.
+
+### 4. Analysis
+---
+A local notebook is used to compare the saved benchmarks of the implementations. This pulls the benchmarks from the server into a local iPhyton environment in order to analyse the results.
+To do this, you must clone the repo locally and fill in the .env with your access data.
+Please also fill in the base directory for the benchmark folder.
+
+Please note: For the analysis to work, the reference implementation files (f1.csv, f2.csv,f3.csv,f4.csv,output.csv) must be located in the /datasets/data_reference folder!
+
