@@ -23,10 +23,10 @@ int main(int argc, char* argv[]) {
     unordered_map<string, vector<string>> file3Data; // Map of key -> {D}
     unordered_map<string, vector<string>> file4Data; // Map of D -> {E}
 
-    file1Data.reserve(7000000);
-    file2Data.reserve(7000000);
-    file3Data.reserve(7000000);
-    file4Data.reserve(7000000);
+    file1Data.reserve(30000000);
+    file2Data.reserve(30000000);
+    file3Data.reserve(30000000);
+    file4Data.reserve(30000000);
 
     // Read file1 and populate file1Data
     ifstream file1(file1Path);
