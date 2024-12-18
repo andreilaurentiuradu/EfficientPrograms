@@ -23,3 +23,23 @@ Our Optimizing is not always ellegant. We optimize not for all data but for exac
 **The bottleneck at this version is the creation of the hashmap.**(When we remove the for loop from the file we can run the benchmark and get the cycles the program needs for the loading and the creation of the hashmap)
 
 We can also include optimizations that did not improve our program. (e.g. loop unrolling from the lecture is probably already done by the compiler)
+
+2.4.1 165268697875
+2.4.2 140894615144 starter
+2.4.3 151018219603
+3.0 Add buffer size for iostream 
+    using 2.4.2 as skel : 138298968968
+
+3.1 
+136601103826
+138515627345
+135365369065
+in benchmark we have: 140032593378
+- verify number of arguments
+- add try catch error handler
+- output buffer with preallocation
+- intermediary buffer for reading (line)
+
+3.2
+135685574101
+- optimizing for loops with loop unrolling

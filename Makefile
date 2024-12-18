@@ -3,8 +3,8 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -g
 
 # Source file and output binary
-SRC = hashmap_version.cpp
-OUT = myjoin
+SRC = implementations/3.2_loop_unrolling.cpp
+OUT = 3.2_loop_unrolling
 
 # Input CSV files
 INPUTS = a.csv b.csv c.csv d.csv
