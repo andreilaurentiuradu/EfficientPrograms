@@ -1,6 +1,7 @@
 #!/bin/bash
 source_file=$1
-g++ implementations/${source_file}.cpp -o binaries/$source_file
+# -pthread
+g++ implementations/${source_file}.cpp -std=c++17 -o binaries/$source_file
 timestamp=$(date "+%Y-%m-%d%H_%M_%S")
 out_dir=benchmarks/${source_file}_${timestamp}
 mkdir "$out_dir"

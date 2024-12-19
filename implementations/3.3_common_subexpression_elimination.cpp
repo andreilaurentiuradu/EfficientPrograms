@@ -48,9 +48,11 @@ int main(int argc, char *argv[]) {
     try {
         // Data containers with pre-allocated space
         unordered_map<string, vector<string>> file1Data, file2Data, file3Data, file4Data;
-        for (auto& map : {&file1Data, &file2Data, &file3Data, &file4Data}) {
-            map->reserve(30000000);
-        }
+        // Reserve space for each file map
+        file1Data.reserve(30000000);
+        file2Data.reserve(30000000);
+        file3Data.reserve(30000000);
+        file4Data.reserve(30000000);
 
         // Read files
         readFileIntoMap(argv[1], file1Data);
@@ -69,40 +71,37 @@ int main(int argc, char *argv[]) {
                         if (auto it4 = file4Data.find(D); it4 != file4Data.end()) {
                             const auto& Es = it4->second;
                             
+                            // Precompute repetitive parts of the output (CSE)
+                            string precomputedPrefix = D + "," + A + ",";
+
                             // Loop unrolling for better performance
                             size_t i = 0;
                             for (; i + 1 < Bs.size(); i += 2) {
                                 const auto& B = Bs[i];
-                                for (const auto& C : Cs) {
-                                    for (const auto& E : Es) {
-                                        outputBuffer.append(D).append(",")
-                                                  .append(A).append(",")
-                                                  .append(B).append(",")
-                                                  .append(C).append(",")
-                                                  .append(E).append("\n");
-                                    }
-                                }
-                                // Handle odd number of elements
                                 const auto& B2 = Bs[i + 1];
+
+                                string precomputedB = precomputedPrefix + B + ",";
+                                string precomputedB2 = precomputedPrefix + B2 + ",";
+
                                 for (const auto& C : Cs) {
+                                    string precomputedBC = precomputedB + C + ",";
+                                    string precomputedB2C = precomputedB2 + C + ",";
+
                                     for (const auto& E : Es) {
-                                        outputBuffer.append(D).append(",")
-                                                      .append(A).append(",")
-                                                      .append(B2).append(",")
-                                                      .append(C).append(",")
-                                                      .append(E).append("\n");
+                                        outputBuffer.append(precomputedBC).append(E).append("\n");
+                                        outputBuffer.append(precomputedB2C).append(E).append("\n");
                                     }
                                 }
                             }
+
+                            // odd number of elements
                             if (i < Bs.size()) {
                                 const auto& B = Bs[i];
+                                string precomputedB = precomputedPrefix + B + ",";
                                 for (const auto& C : Cs) {
+                                    string precomputedBC = precomputedB + C + ",";
                                     for (const auto& E : Es) {
-                                        outputBuffer.append(D).append(",")
-                                                  .append(A).append(",")
-                                                  .append(B).append(",")
-                                                  .append(C).append(",")
-                                                  .append(E).append("\n");
+                                        outputBuffer.append(precomputedBC).append(E).append("\n");
                                     }
                                 }
                             }

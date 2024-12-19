@@ -1,7 +1,7 @@
 #!/bin/bash
 sourcefile=$1
 echo "(!) Compiling"
-g++ implementations/${sourcefile}.cpp -o binaries/$sourcefile
+g++ implementations/${sourcefile}.cpp -std=c++17 -pthread -o binaries/$sourcefile
 
 for dir in datasets/*; do
     echo -n "Testing $dir"

@@ -76,7 +76,6 @@ int main(int argc, char* argv[]) {
     }
 
     auto result = multiwayJoin(argv[1], argv[2], argv[3], argv[4]);
-    std::cout << "HELLO\n";
     // Output the result
     for (const auto& row : result) {
         for (size_t i = 0; i < row.size(); ++i) {

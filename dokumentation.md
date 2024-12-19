@@ -42,4 +42,15 @@ in benchmark we have: 140032593378
 
 3.2
 135685574101
+133536138358
+135789105029
 - optimizing for loops with loop unrolling
+
+3.3
+139877263271
+- common subexpression elimination (small differences)
+
+3.4
+157612803132
+- tried to parallize reading the data (worse results than before)
+
