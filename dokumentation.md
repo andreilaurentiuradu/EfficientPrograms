@@ -54,3 +54,20 @@ in benchmark we have: 140032593378
 157612803132
 - tried to parallize reading the data (worse results than before)
 
+3.5 
+144079554918
+- no improvement of removing substr calls and append calls
+
+3.6
+184236371124
+- increased cpu cycle for large dataset, for small decreased
+
+3.7
+161477113968
+- robin hood map increased cpu cycle a bit but lowers instruction cycles
+
+3.8
+- not providing right output yet, needs to be further debugged but could decrease cpu cycles bc of hash lookups and comparisons
+
+3.9
+- not providing right output yet, needs to be further debugged but could decrease cpu cycles bc of hash lookups and comparisons

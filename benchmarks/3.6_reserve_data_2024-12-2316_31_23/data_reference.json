@@ -1,0 +1,22 @@
+{"counter-value" : "40331918237.000000", "unit" : "", "event" : "branches", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 844.523412, "metric-unit" : "M/sec"}
+{"counter-value" : "323964811.000000", "unit" : "", "event" : "branch-misses", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 0.803247, "metric-unit" : "of all branches"}
+{"counter-value" : "1146158905.000000", "unit" : "", "event" : "bus-cycles", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 23.999801, "metric-unit" : "M/sec"}
+{"counter-value" : "1408128932.000000", "unit" : "", "event" : "cache-misses", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 70.591636, "metric-unit" : "of all cache refs"}
+{"counter-value" : "1994753207.000000", "unit" : "", "event" : "cache-references", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 41.768799, "metric-unit" : "M/sec"}
+{"counter-value" : "184236371124.000000", "unit" : "", "event" : "cpu-cycles", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 3.857786, "metric-unit" : "GHz"}
+{"counter-value" : "198261200919.000000", "unit" : "", "event" : "instructions", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 1.076124, "metric-unit" : "insn per cycle"}
+{"counter-value" : "152439134498.000000", "unit" : "", "event" : "ref-cycles", "event-runtime" : 47757304150, "pcnt-running" : 100.00, "metric-value" : 3.191974, "metric-unit" : "G/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "alignment-faults", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "bpf-output", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "134.000000", "unit" : "", "event" : "cgroup-switches", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 2.805870, "metric-unit" : "/sec"}
+{"counter-value" : "134.000000", "unit" : "", "event" : "cs", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 2.805870, "metric-unit" : "/sec"}
+{"counter-value" : "47757.003398", "unit" : "msec", "event" : "cpu-clock", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.999943, "metric-unit" : "CPUs utilized"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "cpu-migrations", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "emulation-faults", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "0.000000", "unit" : "", "event" : "major-faults", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.000000, "metric-unit" : "/sec"}
+{"counter-value" : "1136072.000000", "unit" : "", "event" : "minor-faults", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 23.788588, "metric-unit" : "K/sec"}
+{"counter-value" : "1136072.000000", "unit" : "", "event" : "page-faults", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 23.788588, "metric-unit" : "K/sec"}
+{"counter-value" : "47757.028880", "unit" : "msec", "event" : "task-clock", "event-runtime" : 47757028880, "pcnt-running" : 100.00, "metric-value" : 0.999944, "metric-unit" : "CPUs utilized"}
+{"counter-value" : "47759714667.000000", "unit" : "ns", "event" : "duration_time", "event-runtime" : 47759714667, "pcnt-running" : 100.00, "metric-value" : 1.000057, "metric-unit" : "G/sec"}
+{"counter-value" : "45873499000.000000", "unit" : "ns", "event" : "user_time", "event-runtime" : 45873499000, "pcnt-running" : 100.00, "metric-value" : 960.560410, "metric-unit" : "M/sec"}
+{"counter-value" : "1883897000.000000", "unit" : "ns", "event" : "system_time", "event-runtime" : 1883897000, "pcnt-running" : 100.00, "metric-value" : 39.447544, "metric-unit" : "M/sec"}
